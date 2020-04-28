@@ -10,7 +10,7 @@ import org.apache.spark.sql.SparkSession
 object SparkUtil {
   def sparkSession(): SparkSession = {
     val spark = SparkSession.builder()
-      .appName("UdfCase")
+      .appName("Spark App")
       .master("local")
       .getOrCreate()
     spark
